@@ -34,12 +34,17 @@ This application is used to record and play back keyboard and mouse events on yo
 3. Follow the on-screen instructions to either record or play back events.
 
 ## Contributing
+If you found this tool useful please give this repo a star!
 
 Contributions are welcome! If you'd like to add new features, fix bugs, or improve the documentation, feel free to fork the repository and submit a pull request.
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Authors
+
+Nguyen Dinh Quyen
 
 ## Contact
 For any inquiries or feedback, please contact:
