@@ -45,4 +45,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For any inquiries or feedback, please contact:
 
 Nguyen Dinh Quyen
+
 Email: nguyendinhquyen000@gmail.com
