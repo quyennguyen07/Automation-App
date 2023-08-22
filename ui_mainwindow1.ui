@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>228</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="central_layout">
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="play_group">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Play</string>
+      </property>
+      <layout class="QGridLayout" name="play_layout">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="run_label_layout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="iteration_label">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Iteration</string>
+           </property>
+           <property name="buddy">
+            <cstring>iteration_spin</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="iteration_spin">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="run_path_profile_label">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Path Profile</string>
+           </property>
+           <property name="buddy">
+            <cstring>run_path_profile_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="run_path_profile_edit">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="url_label">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>URL</string>
+           </property>
+           <property name="buddy">
+            <cstring>url_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="url_edit">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="file_record_label">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>File Record</string>
+           </property>
+           <property name="buddy">
+            <cstring>file_record_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="file_record_edit">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="play_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Play</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="record_group">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Record</string>
+      </property>
+      <layout class="QGridLayout" name="record_layout">
+       <item row="0" column="0">
+        <widget class="QLCDNumber" name="lcd_time">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="value" stdset="0">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <layout class="QGridLayout" name="record_button_layout">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="record_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Record</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="stop_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="save_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="record_label_layout">
+         <item row="1" column="0">
+          <widget class="QLabel" name="record_url_label">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>URL</string>
+           </property>
+           <property name="buddy">
+            <cstring>record_url_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="record_path_profile_label">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Path Profile</string>
+           </property>
+           <property name="buddy">
+            <cstring>record_path_profile_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="record_url_edit">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="record_path_profile_edit">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>record_path_profile_edit</tabstop>
+  <tabstop>record_url_edit</tabstop>
+  <tabstop>iteration_spin</tabstop>
+  <tabstop>run_path_profile_edit</tabstop>
+  <tabstop>url_edit</tabstop>
+  <tabstop>file_record_edit</tabstop>
+  <tabstop>record_button</tabstop>
+  <tabstop>stop_button</tabstop>
+  <tabstop>save_button</tabstop>
+  <tabstop>play_button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
