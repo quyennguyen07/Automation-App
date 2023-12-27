@@ -17,13 +17,14 @@ This application is used to record and play back keyboard and mouse events on yo
 1. **Clone the repository:**
 
    git clone https://github.com/quyennguyen07/Automation-App.git
+   
    cd your-app
 
-2. **Install dependencies:**
+3. **Install dependencies:**
 
     pip install -r requirements.txt
 
-3. **Run the application:**
+4. **Run the application:**
 
     python main.py
 
